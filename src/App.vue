@@ -1,7 +1,6 @@
 <template>
   <span>
     <h1 class="header">Personal Project</h1>
-
     <bodyMain />
     <projects />
     <foot />
@@ -20,6 +19,8 @@ export default {
     foot,
   },
 };
+
+//fix footer, add scroll open effect
 </script>
 
 <style>
@@ -37,3 +38,4 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 </style>
+

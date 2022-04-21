@@ -2,40 +2,44 @@
   <footer>
     <div class="footer">
       <b-container class="footer-boot">
-        <b-row>
+        <b-row cols-lg="12">
           <b-col class="links">
             <h5>Links</h5>
-            <div class="link-redirects"><a href="#">hard vibes</a> <br /></div>
+            <div class="link-redirects"><a href="#">Link</a> <br /></div>
           </b-col>
-          <b-col class="contact-us">
-            <h5>Contact Us</h5>
-            <b-row>
+
+          <b-col name="icon-exits">
+            <div class="icons">
+              <a href="https://google.com" target="_blank">
+                <img src="../assets/socials/github.png" class="icon" />
+              </a>
+              <a href="#" target="_blank">
+                <img src="../assets/socials/linkedin.png" class="icon" />
+              </a>
+              <a href="#" target="_blank">
+                <img src="../assets/socials/discord.png" class="icon" />
+              </a>
+            </div>
+          </b-col>
+
+          <b-col class="contact-me">
+            <h5>Contact Me</h5>
+            <b-row cols="12" cols-sm="2" cols-md="8" cols-lg="12">
               <b-col>
                 <ul class="contact-info">
-                  <li style="font-size: 105%">Email:</li>
-                  <li style="font-size: 90%">ekh3@njit.edu</li>
+                  <li style="font-size: 105%; font-style: bold">Phone:</li>
+                  <li style="font-size: 90%">123-456-7890</li>
                 </ul>
               </b-col>
-              <b-col>
-                <ul class="contact-info">
-                  <li style="font-size: 105%">Located:</li>
-                  <li style="font-size: 90%">Somewhere in US</li>
-                </ul>
+              <b-col class="contact-info">
+                <li style="font-size: 105%; font-style: bold">Email:</li>
+                <li style="font-size: 90%">ekh3@njit.edu</li>
               </b-col>
             </b-row>
           </b-col>
         </b-row>
-        <b-row class="icons">
-          <b-nav v-for="value in socials" v-bind:key="value.title">
-            <b-col>
-              <b-nav-item v-bind:href="value.url" class="icon">
-                <img v-bind:src="value.img_source" />
-              </b-nav-item>
-            </b-col>
-          </b-nav>
-        </b-row>
       </b-container>
-      <h6>By Ethan H.</h6>
+      <h6>By: Ethan H.</h6>
     </div>
   </footer>
 </template>
@@ -43,42 +47,19 @@
 <script>
 export default {
   data() {
-    return {
-      //Social media links to be displayed in the footer
-      socials: [
-        {
-          title: "LinkedIn",
-          img_source:
-            "https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/linkedin-48.png",
-          url: "",
-        },
-        {
-          title: "Discord",
-          img_source:
-            "https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-48.png",
-          url: "",
-        },
-        {
-          title: "Instagram",
-          img_source:
-            "https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/instagram-48.png",
-          url: "",
-        },
-        {
-          title: "GitHub",
-          img_source:
-            "https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/github-48.png",
-          url: "",
-        },
-      ],
-    };
+    return {};
   },
 };
 </script>
 
 <style scoped>
+:root {
+  --footer-color: ;
+  --footer-text-color: rgb(73, 73, 73);
+}
+
 footer {
-  color: rgb(73, 73, 73);
+  color: var(--footer-text-color);
   background: linear-gradient(0deg, rgb(199, 199, 199), rgb(196, 196, 196) 95%);
   text-align: center;
   justify-content: center;
@@ -95,17 +76,21 @@ footer {
 }
 
 .icon {
-  padding: 0%;
+  display: inline;
+  padding: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
-.icon:hover {
+.icon:hover,
+.icon:focus {
   border-radius: 20px;
   background-color: rgba(153, 153, 153, 0.205);
   animation: raiseIn 200ms ease-in-out;
   animation-fill-mode: forwards;
 }
 
-.contact-us,
+.contact-me,
 .links {
   border: 1px #3d1717;
   border-style: solid;
