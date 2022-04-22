@@ -1,20 +1,20 @@
 <template>
   <span>
-    <h1 class="header">Personal Project</h1>
-    <bodyMain />
+    <div style="height: 1rem; background-color: rgba(0,85,102,0.5)" />
+    <profileMainVue />
     <projects />
     <foot />
-
-
   </span>
 </template>
 
 <script>
+import profileMainVue from "./components/Profile-Main.vue";
 import projects from "./components/Projects-Main.vue";
 import foot from "./components/Footer-Main.vue";
 
 export default {
   components: {
+    profileMainVue,
     projects,
     foot,
   },

@@ -22,16 +22,16 @@
 
         <b-row>
           <b-col class="contact-me">
-            <strong style="justify-content: center; text-align: center;">Contacting Me</strong>
+            <h5 style="justify-content: center; text-align: center; margin: 0%; font-weight: bold;">Contact Me</h5>
             <div class="content1">
               <ul class="contact-info">
                 <li>
                   <a>Email: </a>
-                  <a href="">hi@njit.edu</a>
+                  <a href="mailto:ekh3@njit.edu">hi@njit.edu</a>
                 </li>
                 <li>
                   <a>Discord: </a>
-                  <a href="">snipe#4444</a>
+                  <a style=" color: rgb(73, 73, 73);">snipe#4444</a>
                 </li>
               </ul>
             </div>
@@ -39,7 +39,7 @@
         </b-row>
 
       </b-container>
-      <h6>By: Ethan H.</h6>
+      <h6 style="font-size: x-small; ">© Ethan Ho 2022</h6>
     </div>
   </footer>
 </template>
@@ -54,7 +54,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 :root {
   --footer-color: ;
   --footer-text-color: rgb(73, 73, 73);
@@ -78,9 +78,9 @@ footer {
 
 .icon {
   display: inline;
-  padding: 2%;
-  padding-left: 3%;
-  padding-right: 3%;
+  margin-inline: 0.5%;
+  padding: 0.5%;
+  scale: 0.95;
 }
 
 .icon:hover,
@@ -92,8 +92,6 @@ footer {
 }
 
 .contact-me {
-  padding-top: 0.5%;
-  margin-bottom: 1%;
   justify-content: center;
   text-align: center;
   margin-inline: 1%;
@@ -103,16 +101,18 @@ footer {
   list-style: none;
   padding: 0%;
   margin: 0%;
-  margin-bottom: 1%;
+  margin-bottom: 4px;
+  margin-top: 2px;
+  font-size: 85%;
 }
 
-a:link,
-a:visited {
+.contact-me a:link,
+.contact-me a:visited {
   color: rgb(73, 73, 73);
   text-decoration: none;
 }
 
-a:hover {
+.contact-me a:hover {
   color: #fcfcfc;
 }
 
