@@ -4,17 +4,17 @@
     <bodyMain />
     <projects />
     <foot />
+
+
   </span>
 </template>
 
 <script>
-import bodyMain from "./components/Body-Main.vue";
 import projects from "./components/Projects-Main.vue";
 import foot from "./components/Footer-Main.vue";
 
 export default {
   components: {
-    bodyMain,
     projects,
     foot,
   },

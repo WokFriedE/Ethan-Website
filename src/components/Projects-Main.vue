@@ -1,9 +1,13 @@
 <template>
-    <div>
-        <b-row>
-
-        </b-row>
-    </div>
+    <span>
+        <strong>HI</strong>
+        <div class="project-title" v-for="proj in projects" v-bind:key="proj.name">
+            <ul>
+                <li> {{ proj.name }} </li>
+                <li>{{ proj.description }}</li>
+            </ul>
+        </div>
+    </span>
 </template>
 
 <script>

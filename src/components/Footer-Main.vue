@@ -2,18 +2,14 @@
   <footer>
     <div class="footer">
       <b-container class="footer-boot">
-        <b-row cols-lg="12">
-          <b-col class="links">
-            <h5>Links</h5>
-            <div class="link-redirects"><a href="#">Link</a> <br /></div>
-          </b-col>
+        <b-row>
 
           <b-col name="icon-exits">
             <div class="icons">
-              <a href="https://google.com" target="_blank">
+              <a href="https://github.com/WokFriedE" target="_blank">
                 <img src="../assets/socials/github.png" class="icon" />
               </a>
-              <a href="#" target="_blank">
+              <a href="https://www.linkedin.com/in/ethan-ho-46a032233/" target="_blank">
                 <img src="../assets/socials/linkedin.png" class="icon" />
               </a>
               <a href="#" target="_blank">
@@ -21,23 +17,27 @@
               </a>
             </div>
           </b-col>
+        </b-row>
 
+
+        <b-row>
           <b-col class="contact-me">
-            <h5>Contact Me</h5>
-            <b-row cols="12" cols-sm="2" cols-md="8" cols-lg="12">
-              <b-col>
-                <ul class="contact-info">
-                  <li style="font-size: 105%; font-style: bold">Phone:</li>
-                  <li style="font-size: 90%">123-456-7890</li>
-                </ul>
-              </b-col>
-              <b-col class="contact-info">
-                <li style="font-size: 105%; font-style: bold">Email:</li>
-                <li style="font-size: 90%">ekh3@njit.edu</li>
-              </b-col>
-            </b-row>
+            <strong style="justify-content: center; text-align: center;">Contacting Me</strong>
+            <div class="content1">
+              <ul class="contact-info">
+                <li>
+                  <a>Email: </a>
+                  <a href="">hi@njit.edu</a>
+                </li>
+                <li>
+                  <a>Discord: </a>
+                  <a href="">snipe#4444</a>
+                </li>
+              </ul>
+            </div>
           </b-col>
         </b-row>
+
       </b-container>
       <h6>By: Ethan H.</h6>
     </div>
@@ -45,9 +45,11 @@
 </template>
 
 <script>
+
 export default {
   data() {
-    return {};
+    return {
+    };
   },
 };
 </script>
@@ -64,8 +66,7 @@ footer {
   text-align: center;
   justify-content: center;
   bottom: 0%;
-  padding-top: 15px;
-  padding-bottom: 5px;
+  padding-bottom: 0.01%;
 }
 
 .icons {
@@ -90,31 +91,19 @@ footer {
   animation-fill-mode: forwards;
 }
 
-.contact-me,
-.links {
-  border: 1px #3d1717;
-  border-style: solid;
-  margin-left: 5px;
-  margin-right: 5px;
+.contact-me {
+  padding-top: 0.5%;
+  margin-bottom: 1%;
   justify-content: center;
   text-align: center;
+  margin-inline: 1%;
 }
 
 .contact-info {
-  float: initial;
-  overflow: auto;
   list-style: none;
-  text-align: left;
-  justify-content: center;
-  padding: 0;
-  width: 3fr;
-}
-
-.link-redirects {
-  text-align: left;
-  font-style: italic;
-  text-decoration-line: underline;
-  width: 2fr;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: 1%;
 }
 
 a:link,
