@@ -3,6 +3,7 @@ import App from './App.vue'
 import { BootstrapVue } from 'bootstrap-vue'
 
 require('./assets/css/main.css')
+require('./assets/css/animations.css')
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 

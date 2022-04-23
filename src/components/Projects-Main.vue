@@ -1,38 +1,68 @@
 <template>
-    <span>
-        <strong>HI</strong>
-        <div class="project-title" v-for="proj in projects" v-bind:key="proj.name">
-            <ul>
-                <li> {{ proj.name }} </li>
-                <li>{{ proj.description }}</li>
-            </ul>
+    <div class="container_projects">
+
+        <!-- The project description section -->
+        <div class="project_desc">
+            <h3 style="font-weight: bold;">Project Title</h3>
+            <section class="general_proj_info">
+                <img src="../assets/logo.png"
+                    style="border: 1px solid black; margin-inline: 1rem; height: 20%; width: 30%; object-fit: contain;" />
+                <div>
+                    <h6 style="font-weight: bold;">Description:</h6>
+                    <p style="margin-inline: 1rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                        quae
+                        placeat cumque fuga voluptatem
+                        temporibus, doloribus laboriosam nostrum et natus ex vero quos vel! Recusandae aliquam rem iure
+                        sequi
+                        odit.</p>
+                </div>
+            </section>
+            <section class="center">
+                <a href="">Git</a>
+                <a href="">Link</a>
+            </section>
         </div>
-    </span>
+
+
+
+    </div>
 </template>
 
 <script>
 export default {
-
     data() {
         return {
-            projects: [
-                {
-                    name: 'Personal Website',
-                    description: 'A website that I built for myself to showcase my projects and learn new things.',
-                    link: '',
-                    img: ''
-                },
-                {
-                    name: 'Personal Website',
-                    description: 'A website that I built for myself to showcase my projects and learn new things.',
-                    link: '',
-                    img: ''
-                },
-            ]
         }
     }
 }
 </script>
 
 <style>
+.container_projects {
+    border: 1px solid black;
+    margin-bottom: 1%;
+    margin-inline: 4rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.project_desc {
+    border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+    max-width: 30%;
+    padding-top: 0.1%;
+}
+
+.center a {
+    margin-inline: 1rem;
+}
+
+.general_proj_info {
+    display: inline;
+    justify-content: left;
+    align-items: center;
+    margin-inline: 1rem;
+}
 </style>

@@ -1,9 +1,11 @@
 <template>
   <footer>
+
     <div class="footer">
+      <!-- General fade in -->
       <b-container class="footer-boot">
         <b-row>
-
+          <!-- icons -->
           <b-col name="icon-exits">
             <div class="icons">
               <a href="https://github.com/WokFriedE" target="_blank">
@@ -18,8 +20,7 @@
             </div>
           </b-col>
         </b-row>
-
-
+        <!-- Contact Me section -->
         <b-row>
           <b-col class="contact-me">
             <h5 style="justify-content: center; text-align: center; margin: 0%; font-weight: bold;">Contact Me</h5>
@@ -31,13 +32,13 @@
                 </li>
                 <li>
                   <a>Discord: </a>
-                  <a style=" color: rgb(73, 73, 73);">snipe#4444</a>
+                  <a style=" color: var(--footer-text-color);">snipe#4444</a>
                 </li>
               </ul>
             </div>
           </b-col>
         </b-row>
-
+        <!-- Copyright section -->
       </b-container>
       <h6 style="font-size: x-small; ">© Ethan Ho 2022</h6>
     </div>
@@ -55,14 +56,9 @@ export default {
 </script>
 
 <style>
-:root {
-  --footer-color: ;
-  --footer-text-color: rgb(73, 73, 73);
-}
-
 footer {
   color: var(--footer-text-color);
-  background: linear-gradient(0deg, rgb(199, 199, 199), rgb(196, 196, 196) 95%);
+  background-color: dimgrey;
   text-align: center;
   justify-content: center;
   bottom: 0%;
@@ -80,7 +76,7 @@ footer {
   display: inline;
   margin-inline: 0.5%;
   padding: 0.5%;
-  scale: 0.95;
+  transform: scale(0.95);
 }
 
 .icon:hover,
@@ -108,21 +104,11 @@ footer {
 
 .contact-me a:link,
 .contact-me a:visited {
-  color: rgb(73, 73, 73);
+  color: var(--footer-text-color);
   text-decoration: none;
 }
 
 .contact-me a:hover {
   color: #fcfcfc;
-}
-
-@keyframes raiseIn {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(0.85);
-  }
 }
 </style>
