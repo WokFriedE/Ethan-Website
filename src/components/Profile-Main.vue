@@ -34,6 +34,7 @@ export default {
 
 .profile_info {
     margin: 2%;
+    margin-right: 10%;
     color: whitesmoke;
 }
 </style>
