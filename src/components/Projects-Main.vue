@@ -1,8 +1,8 @@
 <template>
-   <div class="container_projects">
+   <div class="projects-container">
 
       <!-- The project description section -->
-      <div class="project_info">
+      <div class="project_info-container">
          <h3 style="font-weight: bold;">{{ selected_proj.title }}</h3>
          <section class="general_proj_info">
             <img src="../assets/logo.png" />
@@ -17,7 +17,7 @@
          </section>
       </div>
 
-      <div name="Projects_List" class="wrapper">
+      <div class="project_list-container">
          <select id="projs" size="18" class="projects_list" v-model="current_project">
             <option v-for="proj of projects" :key=proj.title :value=projects.indexOf(proj.title) class="select_option">
                {{ proj.title }}
@@ -66,7 +66,7 @@ export default {
 </script>
 
 <style>
-.container_projects {
+.projects-container {
    border: 1px solid black;
    margin-bottom: 1%;
    margin-inline: 4rem;
@@ -75,8 +75,9 @@ export default {
    align-items: center;
 }
 
-.project_info {
+.project_info-container {
    border: 1px solid black;
+   display: inline;
    justify-content: center;
    text-align: center;
    max-width: 30%;
@@ -84,7 +85,8 @@ export default {
 }
 
 .general_proj_info {
-   display: inline;
+   display: flex;
+   flex-direction: column;
    justify-content: left;
    align-items: center;
 }
@@ -94,17 +96,24 @@ export default {
    margin-inline: 1rem;
    height: 20%;
    width: 30%;
-   margin-bottom: 1em;
+   margin-bottom: 1rem;
    justify-content: center;
    align-items: center;
+}
+
+.project_list-container {
+   justify-content: center;
+   text-align: center;
+   max-width: 70%;
+   padding-top: 0.1%;
 }
 
 .projects_list {
    scrollbar-color: var(--nav-background) var(--footer-text-color);
    background-color: transparent;
    border: 1px solid black;
-   margin-left: 10px;
    height: max-content;
+   margin-left: 10px;
    padding: 2px;
 }
 

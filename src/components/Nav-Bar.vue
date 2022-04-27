@@ -21,7 +21,7 @@ nav {
 }
 
 .resume-button {
-    background-color: rgb(197, 196, 196);
+    background-color: rgb(175, 175, 175);
     border-radius: 10px;
     margin: 1rem;
     margin-bottom: 0.05%;
