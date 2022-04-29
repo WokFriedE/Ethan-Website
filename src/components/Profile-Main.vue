@@ -1,7 +1,8 @@
 <template>
     <div class="container_profile">
         <!-- Image -->
-        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHJ_7jj6R_BZg/profile-displayphoto-shrink_200_200/0/1650336371998?e=1655942400&v=beta&t=9GBhhTk71qXuNxNJjUrs5SdJ-erDdwa_9Th5jQRCWiI"
+        <!-- https://media-exp1.licdn.com/dms/image/C4E03AQHJ_7jj6R_BZg/profile-displayphoto-shrink_200_200/0/1650336371998?e=1655942400&v=beta&t=9GBhhTk71qXuNxNJjUrs5SdJ-erDdwa_9Th5jQRCWiI -->
+        <img src="***REMOVED***"
             class="profile_pic" />
         <!-- Info about me -->
         <div class="profile_info">
@@ -28,6 +29,10 @@ export default {
 }
 
 .profile_pic {
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 250px;
     border-radius: 25%;
     border: 2px solid rgba(214, 214, 214, 0.5);
 }

@@ -28,7 +28,7 @@
               <ul class="contact-info">
                 <li>
                   <a>Email: </a>
-                  <a href="mailto:ekh3@njit.edu">hi@njit.edu</a>
+                  <a href="mailto:ekh3@njit.edu">ekh3@njit.edu</a>
                 </li>
                 <li>
                   <a>Discord: </a>
@@ -84,6 +84,11 @@ footer {
   border-radius: 20px;
   background-color: rgba(153, 153, 153, 0.205);
   animation: raiseIn 200ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.icon:not(:hover) {
+  animation: raiseOut 200ms ease-in-out;
   animation-fill-mode: forwards;
 }
 
