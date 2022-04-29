@@ -37,36 +37,13 @@
 
 <script>
 import temp from '../assets/logo.png';
+import json from '../data/projects.json';
+console.log(json)
 
 export default {
    data() {
       return {
-         projects: [
-            {
-               title: "hi",
-               description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-               github: "",
-               link: "",
-               date_start: "",
-               date_end: "",
-            },
-            {
-               title: "not hello",
-               description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-               github: " ",
-               link: " ",
-               date_start: "",
-               date_end: "",
-            },
-            {
-               title: "not hello 2",
-               description: "",
-               github: "",
-               link: "",
-               date_start: "",
-               date_end: "",
-            },
-         ],
+         projects: json.projects,
          selected_proj: {
             title: "Please Select a Project",
             description: "N/A",
@@ -143,19 +120,18 @@ export default {
 }
 
 .projects-list {
+   border: 1px solid black;
    scrollbar-color: var(--nav-background) var(--footer-text-color);
    overflow-y: scroll;
    overflow-x: hidden;
-   list-style: none;
-   width: max-content;
-   height: 100%;
+   height: 280px;
    width: 100%;
+   padding-left: 0%;
+   margin-left: 2rem;
 }
 
 .project-item {
    background-color: var(--nav-background);
-   border: 1px solid black;
-
 }
 
 .project-item li {
@@ -169,11 +145,6 @@ export default {
    width: 100%;
    text-align: left;
    border-bottom: 1px solid black;
-
-}
-
-.project-item button:nth-last-child(1) {
-   border-bottom: 0px;
 }
 
 .project-item button:hover {

@@ -1,5 +1,6 @@
 <template>
     <nav>
+        <!-- reprogram buttons to be anchors -->
         <button class="template-button" onclick="window.location='https://github.com/WokFriedE/Personal-Website';">
             Github Repo
         </button>
