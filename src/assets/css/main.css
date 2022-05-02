@@ -7,3 +7,9 @@ body {
     background: #585858;
     font-family: 'Source Code Pro', monospace, sans-serif;
 }
+
+.cenetering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

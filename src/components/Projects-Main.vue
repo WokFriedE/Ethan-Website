@@ -3,6 +3,7 @@
 
       <!-- The project description section -->
       <div class="project_info-container">
+         <!-- make title scalable -->
          <h4 style="font-weight: bold;">{{ selected_proj.title }}</h4>
          <!-- Puts the redirect links -->
          <section class="proj_redirects">
@@ -14,8 +15,8 @@
          <!-- general description -->
          <section class="general_proj_info">
             <div>
-               <h6 style="font-weight: bold;">DESCRIPTION</h6>
-               <p style="margin-inline: 1rem; overflow-y: auto; height: 100%">{{ selected_proj.description }}</p>
+               <h6 style="font-weight: bold;" v-if="selected_proj.description !== ''">DESCRIPTION</h6>
+               <p v-if="selected_proj.description !== ''">{{ selected_proj.description }}</p>
             </div>
          </section>
       </div>
@@ -46,7 +47,7 @@ export default {
          projects: json.projects,
          selected_proj: {
             title: "Please Select a Project",
-            description: "N/A",
+            description: "",
             github: "",
             link: "",
             img: temp,
@@ -90,6 +91,15 @@ export default {
    flex-direction: column;
    justify-content: left;
    align-items: center;
+}
+
+.general_proj_info p {
+   margin-inline: 1rem;
+   height: 10rem;
+   scrollbar-color: var(--nav-background) var(--footer-text-color);
+   overflow-y: auto;
+   padding: 1%;
+   border: 1px solid black;
 }
 
 .general_proj_info img {
