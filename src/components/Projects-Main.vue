@@ -4,7 +4,7 @@
       <!-- The project description section -->
       <div class="project_info-container">
          <!-- make title scalable -->
-         <h4 style="font-weight: bold;">{{ selected_proj.title }}</h4>
+         <h4 style="font-weight: bold; margin-top:5px">{{ selected_proj.title }}</h4>
          <!-- Puts the redirect links -->
          <section class="proj_redirects">
             <a v-bind:href="selected_proj.github" v-if="selected_proj.github !== ''"

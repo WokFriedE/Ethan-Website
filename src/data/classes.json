@@ -1,38 +1,46 @@
 [
     {
-        "title": "Skills"
+        "title": "Classes"
     },
     [
         {
-            "name": "Computer Science",
+            "name": "CS100",
             "description": ""
         },
         {
-            "name": "Java",
+            "name": "CS113",
             "description": ""
         },
         {
-            "name": "Python",
+            "name": "STS201",
             "description": ""
         },
         {
-            "name": "HTML5",
+            "name": "Hum102",
             "description": ""
         },
         {
-            "name": "CSS3",
+            "name": "Math112",
             "description": ""
         },
         {
-            "name": "JavaScript",
+            "name": "Math333",
             "description": ""
         },
         {
-            "name": "BootStrap",
+            "name": "Phys111",
             "description": ""
         },
         {
-            "name": "Curious",
+            "name": "Phys111A",
+            "description": ""
+        },
+        {
+            "name": "Phys121",
+            "description": ""
+        },
+        {
+            "name": "Phys121A",
             "description": ""
         }
     ]

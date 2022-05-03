@@ -13,3 +13,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.section-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}

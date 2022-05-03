@@ -5,7 +5,9 @@
       style="height: 2rem;  background: linear-gradient(180deg, rgba(120, 120, 120, 1) 20%, rgba(255, 255, 255,0) 90%); " />
     <profileMainVue />
     <projectsVue />
-    <boxListingsVue />
+    <boxListingsVue v-bind:propsdata="skills" />
+    <boxListingsVue v-bind:propsdata="classes" />
+
     <div style="height: 2rem;  background: linear-gradient(0deg, dimgrey 20%, rgba(255, 255, 255,0) 60%); " />
     <footerVue />
   </span>
@@ -18,6 +20,9 @@ import projectsVue from "./components/Projects-Main.vue";
 import boxListingsVue from "./components/Box-Listings.vue";
 import footerVue from "./components/Footer-Main.vue";
 
+import skills from "./data/skills.json";
+import classes from "./data/classes.json";
+
 export default {
   components: {
     navBarVue,
@@ -25,6 +30,13 @@ export default {
     projectsVue,
     boxListingsVue,
     footerVue,
+  },
+
+  data() {
+    return {
+      skills: skills,
+      classes: classes,
+    };
   },
 };
 
@@ -35,15 +47,6 @@ export default {
 body {
   background-color: rgb(70, 70, 70);
   margin: 0%;
-}
-
-.header {
-  text-align: center;
-  color: rgb(214, 214, 214);
-  font-size: 40px;
-  text-decoration: underline;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 </style>
 
