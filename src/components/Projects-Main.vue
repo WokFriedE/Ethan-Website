@@ -13,12 +13,11 @@
             <h4 style="font-weight: bold; margin-top:5px">{{ selected_proj.title }}</h4>
             <!-- Puts the redirect links -->
             <section class="proj_redirects">
-               <a v-bind:href="selected_proj.github" v-if="selected_proj.github !== ''"
-                  class="proj_redirects-link">GitHub</a>
-               <a v-bind:href="selected_proj.link" v-if="selected_proj.link !== ''"
-                  class="proj_redirects-link">Project</a>
+               <a v-bind:href="selected_proj.github" v-if="selected_proj.github !== ''" class="proj_redirects-link"
+                  target="_blank">GitHub</a>
+               <a v-bind:href="selected_proj.link" v-if="selected_proj.link !== ''" class="proj_redirects-link"
+                  target="_blank">Project</a>
             </section>
-            <!-- <img :src="selected_proj.img" v-if="selected_proj.img !== ''" /> -->
             <!-- general description -->
             <section class="general_proj_info">
                <div>
@@ -44,7 +43,6 @@
 </template>
 
 <script>
-import temp from '../assets/logo.png';
 import json from '../data/projects.json';
 console.log(json)
 
@@ -52,15 +50,7 @@ export default {
    data() {
       return {
          projects: json.projects,
-         selected_proj: {
-            title: "Please Select a Project",
-            description: "",
-            github: "",
-            link: "",
-            img: temp,
-            date_start: "",
-            date_end: "",
-         }
+         selected_proj: json.projects[0]
       }
    },
    methods: {
