@@ -1,9 +1,11 @@
 <template>
    <div>
+      <!-- Header for segment -->
       <h3 class="centering" style="font-weight: bold;">Projects</h3>
       <div style="border-bottom: 2px solid rgba(0, 0, 0, 0.2); max-width: 75%; margin-inline: 10%;" />
       <br />
 
+      <!-- The projects segment -->
       <div class="projects-container">
          <!-- The project description section -->
          <div class="project_info-container">
@@ -26,7 +28,7 @@
             </section>
          </div>
 
-         <!-- make custom list\-->
+         <!-- make custom list -->
          <div class="project_list-container">
             <ul class="projects-list">
                <section class="project-item">
