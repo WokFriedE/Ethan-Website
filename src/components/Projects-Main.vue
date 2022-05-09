@@ -1,38 +1,43 @@
 <template>
-   <div class="projects-container">
+   <div>
+      <h3 class="centering" style="font-weight: bold;">Projects</h3>
+      <div style="border-bottom: 2px solid rgba(0, 0, 0, 0.2); max-width: 75%; margin-inline: 10%;" />
+      <br />
 
-      <!-- The project description section -->
-      <div class="project_info-container">
-         <!-- make title scalable -->
-         <h4 style="font-weight: bold; margin-top:5px">{{ selected_proj.title }}</h4>
-         <!-- Puts the redirect links -->
-         <section class="proj_redirects">
-            <a v-bind:href="selected_proj.github" v-if="selected_proj.github !== ''"
-               class="proj_redirects-link">GitHub</a>
-            <a v-bind:href="selected_proj.link" v-if="selected_proj.link !== ''" class="proj_redirects-link">Project</a>
-         </section>
-         <!-- <img :src="selected_proj.img" v-if="selected_proj.img !== ''" /> -->
-         <!-- general description -->
-         <section class="general_proj_info">
-            <div>
-               <h6 style="font-weight: bold;" v-if="selected_proj.description !== ''">DESCRIPTION</h6>
-               <p v-if="selected_proj.description !== ''">{{ selected_proj.description }}</p>
-            </div>
-         </section>
-      </div>
-
-      <!-- make custom list\-->
-      <div class="project_list-container">
-         <strong style="display:flex; justify-content: center; align-items: center; font-size:larger;">Projects</strong>
-         <ul class="projects-list">
-            <section class="project-item">
-               <button v-for="proj in projects" :key="projects.indexOf(proj)" v-on:click="handleClick(proj)">
-                  {{ proj.title }}
-               </button>
+      <div class="projects-container">
+         <!-- The project description section -->
+         <div class="project_info-container">
+            <!-- make title scalable -->
+            <h4 style="font-weight: bold; margin-top:5px">{{ selected_proj.title }}</h4>
+            <!-- Puts the redirect links -->
+            <section class="proj_redirects">
+               <a v-bind:href="selected_proj.github" v-if="selected_proj.github !== ''"
+                  class="proj_redirects-link">GitHub</a>
+               <a v-bind:href="selected_proj.link" v-if="selected_proj.link !== ''"
+                  class="proj_redirects-link">Project</a>
             </section>
-         </ul>
-      </div>
+            <!-- <img :src="selected_proj.img" v-if="selected_proj.img !== ''" /> -->
+            <!-- general description -->
+            <section class="general_proj_info">
+               <div>
+                  <h6 style="font-weight: bold;" v-if="selected_proj.description !== ''">DESCRIPTION</h6>
+                  <p v-if="selected_proj.description !== ''">{{ selected_proj.description }}</p>
+               </div>
+            </section>
+         </div>
 
+         <!-- make custom list\-->
+         <div class="project_list-container">
+            <ul class="projects-list">
+               <section class="project-item">
+                  <button v-for="proj in projects" :key="projects.indexOf(proj)" v-on:click="handleClick(proj)">
+                     {{ proj.title }}
+                  </button>
+               </section>
+            </ul>
+         </div>
+
+      </div>
    </div>
 </template>
 
@@ -82,8 +87,7 @@ export default {
    justify-content: center;
    text-align: center;
    width: 50%;
-   height: 300px;
-   padding-top: 0.1%;
+   margin-top: -15px;
 }
 
 .general_proj_info {
@@ -137,7 +141,6 @@ export default {
    height: 280px;
    width: 100%;
    padding-left: 0%;
-   margin-left: 2rem;
 }
 
 .project-item {
