@@ -3,6 +3,9 @@
     <profileMainVue />
     <projectsVue />
 
+    <div style="border-bottom: 2px solid rgba(0, 0, 0, 0.2); max-width: 75%; margin-inline: 10%;" />
+    <br />
+
     <!-- The languages and skills segment -->
     <div style="display: flex; align-items:center; justify-content: center;">
       <section style="width:50%;">
@@ -14,7 +17,10 @@
     </div>
 
     <!-- The classes segment -->
-    <boxListingsVue v-bind:propsdata="classes" />
+    <boxListingsVue v-bind:propsdata="classes" style="margin-inline: 4rem;" />
+
+    <div style="border-bottom: 2px solid rgba(0, 0, 0, 0.2); max-width: 75%; margin-inline: 10%;" />
+    <br />
 
     <!-- The footer segment -->
     <div style="height: 2rem;  background: linear-gradient(0deg, dimgrey 20%, rgba(255, 255, 255,0) 60%); " />
