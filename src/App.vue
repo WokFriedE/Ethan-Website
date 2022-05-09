@@ -22,7 +22,7 @@
     <div style="border-bottom: 2px solid rgba(0, 0, 0, 0.2); max-width: 75%; margin-inline: 10%;" />
     <br />
 
-    <CardItemVue />
+    <CardItemVue v-if="false" />
 
     <!-- The footer segment -->
     <div style="height: 2rem;  background: linear-gradient(0deg, dimgrey 20%, rgba(255, 255, 255,0) 60%); " />

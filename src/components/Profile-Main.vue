@@ -1,8 +1,7 @@
 <template>
     <div class="container_profile">
         <!-- Image -->
-        <!-- https://media-exp1.licdn.com/dms/image/C4E03AQHJ_7jj6R_BZg/profile-displayphoto-shrink_200_200/0/1650336371998?e=1655942400&v=beta&t=9GBhhTk71qXuNxNJjUrs5SdJ-erDdwa_9Th5jQRCWiI -->
-        <img src="***REMOVED***"
+        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHJ_7jj6R_BZg/profile-displayphoto-shrink_200_200/0/1650336371998?e=1655942400&v=beta&t=9GBhhTk71qXuNxNJjUrs5SdJ-erDdwa_9Th5jQRCWiI"
             class="profile_pic" />
         <!-- Info about me -->
         <div class="profile_info">
