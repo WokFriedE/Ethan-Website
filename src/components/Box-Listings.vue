@@ -43,7 +43,7 @@ export default {
 };
 </script>
 
-    <style>
+<style>
 .infomation-box {
     display: flex;
     list-style: none;
@@ -51,7 +51,7 @@ export default {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-inline: 5rem;
+    margin-inline: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1%;
 }
@@ -65,7 +65,6 @@ export default {
     background-color: rgba(95, 95, 95, 0.5);
     color: rgb(228, 228, 228);
     font-weight: bold;
-
     max-height: 8rem;
 }
 
