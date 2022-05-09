@@ -14,9 +14,6 @@
               <a href="https://www.linkedin.com/in/ethan-ho-46a032233/" target="_blank">
                 <img src="../assets/socials/linkedin.png" class="icon" />
               </a>
-              <a href="#" target="_blank">
-                <img src="../assets/socials/discord.png" class="icon" />
-              </a>
               <a href="mailto:ekh3@njit.edu" target="">
                 <img src="../assets/socials/mail.png" class="icon" />
               </a>
