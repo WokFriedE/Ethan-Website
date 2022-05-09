@@ -1,9 +1,9 @@
 {
     "projects": [
         {
-            "title": "hi",
-            "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "github": "",
+            "title": "This Website",
+            "description": "This is essentially a website meant to showcase my front end skills and my general skills in computer science.",
+            "github": "https://github.com/WokFriedE/Personal-Website",
             "link": ""
         },
         {

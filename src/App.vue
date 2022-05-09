@@ -1,14 +1,12 @@
 <template>
   <span>
-    <navBarVue />
-    <div
-      style="height: 2rem;  background: linear-gradient(180deg, rgba(120, 120, 120, 1) 20%, rgba(255, 255, 255,0) 90%); " />
     <profileMainVue />
     <projectsVue />
     <div style="display: flex; align-items:center; justify-content: center;">
       <section style="width:50%;">
         <boxListingsVue v-bind:propsdata="languages" />
       </section>
+      <!-- <div style="border-left: 1px solid rgba(0, 0, 0, 0.2); height:125px;" /> -->
       <section style="width:50%">
         <boxListingsVue v-bind:propsdata="skills" />
       </section>
@@ -21,7 +19,6 @@
 </template>
 
 <script>
-import navBarVue from "./components/Nav-Bar.vue";
 import profileMainVue from "./components/Profile-Main.vue";
 import projectsVue from "./components/Projects-Main.vue";
 import boxListingsVue from "./components/Box-Listings.vue";
@@ -33,7 +30,6 @@ import classes from "./data/classes.json";
 
 export default {
   components: {
-    navBarVue,
     profileMainVue,
     projectsVue,
     boxListingsVue,
