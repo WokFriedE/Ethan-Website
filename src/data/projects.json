@@ -4,7 +4,8 @@
             "title": "This Website",
             "description": "This is essentially a website meant to showcase my front end skills and my general skills in computer science.",
             "github": "https://github.com/WokFriedE/Personal-Website",
-            "link": ""
+            "link": "",
+            "category": "personal"
         },
         {
             "title": "not hello",
