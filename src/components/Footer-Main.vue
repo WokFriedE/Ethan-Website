@@ -17,6 +17,9 @@
               <a href="#" target="_blank">
                 <img src="../assets/socials/discord.png" class="icon" />
               </a>
+              <a href="mailto:ekh3@njit.edu" target="">
+                <img src="../assets/socials/discord.png" class="icon" />
+              </a>
             </div>
           </b-col>
         </b-row>

@@ -1,6 +1,7 @@
 [
     {
-        "title": "Skills"
+        "title": "Skills",
+        "hasDescription": false
     },
     [
         {
@@ -8,31 +9,31 @@
             "description": ""
         },
         {
-            "name": "Java",
-            "description": ""
-        },
-        {
-            "name": "Python",
-            "description": ""
-        },
-        {
-            "name": "HTML5",
-            "description": ""
-        },
-        {
-            "name": "CSS3",
-            "description": ""
-        },
-        {
-            "name": "JavaScript",
-            "description": ""
-        },
-        {
-            "name": "BootStrap",
-            "description": ""
-        },
-        {
             "name": "Curious",
+            "description": ""
+        },
+        {
+            "name": "Quick Learner",
+            "description": ""
+        },
+        {
+            "name": "Adaptable",
+            "description": ""
+        },
+        {
+            "name": "Leader",
+            "description": ""
+        },
+        {
+            "name": "Collaborator",
+            "description": ""
+        },
+        {
+            "name": "Helpful",
+            "description": ""
+        },
+        {
+            "name": "Proficient",
             "description": ""
         }
     ]

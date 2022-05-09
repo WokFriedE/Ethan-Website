@@ -77,7 +77,7 @@ export default {
 /* project description section */
 
 .project_info-container {
-   border: 1px solid black;
+   border: 1px solid rgba(0, 0, 0, 0.3);
    display: inline;
    justify-content: center;
    text-align: center;
@@ -144,17 +144,13 @@ export default {
    background-color: var(--nav-background);
 }
 
-.project-item li {
-   height: 100%;
-   width: 100%;
-}
-
 .project-item button {
    background: none;
    border: none;
    width: 100%;
    text-align: left;
    border-bottom: 1px solid black;
+   font-size: medium;
 }
 
 .project-item button:hover {

@@ -1,19 +1,20 @@
 [
     {
-        "title": "Classes"
+        "title": "Classes",
+        "hasDescription": true
     },
     [
         {
             "name": "CS100",
-            "description": ""
+            "description": "python course"
         },
         {
             "name": "CS113",
-            "description": ""
+            "description": "intro to java"
         },
         {
             "name": "STS201",
-            "description": ""
+            "description": "Studying technology in society"
         },
         {
             "name": "Hum102",
